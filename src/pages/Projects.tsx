@@ -35,13 +35,13 @@ const Projects = () => {
       title: "Quran-Playlist-Manager",
       description: "A comprehensive console-based application for managing playlists. This project was developed as part of the 2024 Data Structures course at Zagazig University. It leverages a custom-built Double linked list data structure, showcasing a range of object-oriented programming (OOP) principles. This project provided hands-on experience with data structure design, algorithm efficiency, and OOP concepts, allowing for both learning and practical application of these key software engineering skills.",
       tags: ["C++", "Data Structures", "OOP", "Console Application"],
-      github: "https://github.com/username/quran-playlist-manager",
+      github: "https://github.com/yaserbelal/Quran_Playlist_Manager",
     },
     {
       title: "Contact Book",
       description: "A comprehensive console-based application for managing contact information. This project was developed as part of the 2024 Data Structures course at Zagazig University. It leverages a custom-built array data structure, showcasing a range of object-oriented programming (OOP) principles. This project provided hands-on experience with data structure design, algorithm efficiency, and OOP concepts, allowing for both learning and practical application of these key software engineering skills.",
       tags: ["C++", "Data Structures", "OOP", "Console Application"],
-      github: "https://github.com/username/contact-book",
+      github: "https://github.com/yaserbelal/Contacts_Book",
     }
   ];
   

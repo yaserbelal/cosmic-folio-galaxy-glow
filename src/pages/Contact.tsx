@@ -1,13 +1,9 @@
 
 import { useEffect, useState } from 'react';
-import { SiTelegram } from 'react-icons/si';
+import { SiTelegram,SiLinkedin,SiGithub,SiCodeforces,SiTryhackme,SiHackthebox} from 'react-icons/si';
 import {
-  Github,
-  Linkedin,
   Mail,
   MapPin,
-  MessageCircle,
-  Code,
   Phone
 } from 'lucide-react';
 
@@ -77,7 +73,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
                   >
-                    <Github size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <SiGithub size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
                     <span className="text-white text-lg font-medium">GitHub</span>
                   </a>
 
@@ -87,7 +83,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
                   >
-                    <Linkedin size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <SiLinkedin size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
                     <span className="text-white text-lg font-medium">LinkedIn</span>
                   </a>
 
@@ -107,8 +103,26 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
                   >
-                    <Code size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <SiCodeforces size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
                     <span className="text-white text-lg font-medium">Codeforces</span>
+                  </a>
+                  <a
+                    href="https://tryhackme.com/p/yaserPoltX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
+                  >
+                    <SiTryhackme size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <span className="text-white text-lg font-medium">TryHackMe</span>
+                  </a>
+                  <a
+                    href="https://academy.hackthebox.com/dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
+                  >
+                    <SiHackthebox size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <span className="text-white text-lg font-medium">Hack The Box</span>
                   </a>
                 </div>
               </div>
