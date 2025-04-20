@@ -70,10 +70,9 @@ const Home = () => {
         <div className={`mt-20 galaxy-card p-6 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h3 className="font-heading text-xl font-medium mb-4 text-galaxy-star">Featured Project</h3>
           <div className="mb-4">
-            <h4 className="text-xl font-bold mb-2">Quran-Playlist-Manager</h4>
+            <h4 className="text-xl font-bold mb-2">Employee-Management-Systemr</h4>
             <p className="text-gray-300">
-              A comprehensive console-based application for managing playlists, leveraging custom-built linked list data structures and OOP principles.
-            </p>
+            A comprehensive web-based application for user management and database interaction. </p>
           </div>
           <Link to="/projects" className="inline-flex items-center text-galaxy-accent hover:underline">
             View All Projects <ArrowRight size={16} className="ml-2" />
