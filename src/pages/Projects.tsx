@@ -37,6 +37,27 @@ const Projects = () => {
       description: "A comprehensive console-based application for managing contact information. This project was developed as part of the 2024 Data Structures course at Zagazig University. It leverages a custom-built array data structure, showcasing a range of object-oriented programming (OOP) principles. This project provided hands-on experience with data structure design, algorithm efficiency, and OOP concepts, allowing for both learning and practical application of these key software engineering skills.",
       tags: ["C++", "Data Structures", "OOP", "Console Application"],
       github: "https://github.com/username/contact-book",
+    },
+    {
+      title: "Personal Portfolio",
+      description: "A modern and responsive portfolio website built with React and TypeScript. Features a dark theme with a unique galaxy-inspired design, interactive animations, and seamless navigation. The site showcases my projects, skills, and experience while incorporating best practices in web development and UI/UX design.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      github: "https://github.com/username/portfolio",
+      demo: "https://your-portfolio-url.com",
+    },
+    {
+      title: "Weather Dashboard",
+      description: "A weather application that provides real-time weather information and forecasts. Built with React and integrates with a weather API to display current conditions, hourly forecasts, and weekly predictions. Features include location search, temperature unit conversion, and responsive design for all devices.",
+      tags: ["React", "API Integration", "Responsive Design", "Weather Data"],
+      github: "https://github.com/username/weather-dashboard",
+      demo: "https://weather-dashboard-demo.com",
+    },
+    {
+      title: "Task Management System",
+      description: "A full-stack task management application that helps users organize and track their daily activities. Features include task creation, categorization, due dates, priority levels, and progress tracking. Built with modern web technologies and following clean code principles.",
+      tags: ["Full Stack", "React", "Node.js", "MongoDB"],
+      github: "https://github.com/username/task-manager",
+      demo: "https://task-manager-demo.com",
     }
   ];
   
