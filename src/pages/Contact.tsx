@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import {
   SiTelegram,
@@ -39,29 +38,33 @@ const Contact = () => {
           <div className={`transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="space-y-8">
               <div className="galaxy-card p-8">
-                <h2 className="text-2xl font-heading font-bold mb-6 text-white">Contact Information</h2>
+                <h2 className="text-2xl font-heading font-bold mb-8 text-white">Contact Information</h2>
 
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <Mail size={24} className="text-galaxy-accent mt-1 mr-4" />
+                <div className="space-y-8">
+                  <div className="flex items-start space-x-4">
+                    <Mail size={24} className="text-galaxy-accent mt-1" />
                     <div>
-                      <h3 className="font-medium text-white mb-1">Email</h3>
+                      <h3 className="font-medium text-white mb-2">Email</h3>
                       <a href="mailto:yasserbelal2005@gmail.com" className="text-gray-300 hover:text-galaxy-accent">
                         yasserbelal2005@gmail.com
                       </a>
                     </div>
                   </div>
-                  <div className="flex items-start">
-                    <Phone size={24} className="text-galaxy-accent mt-1 mr-4" />
+
+                  <div className="flex items-start space-x-4">
+                    <Phone size={24} className="text-galaxy-accent mt-1" />
                     <div>
-                      <h3 className="font-medium text-white mb-1">Phone</h3>
+                      <h3 className="font-medium text-white mb-2">Phone</h3>
                       <a href="tel:+201028427473" className="text-gray-300 hover:text-galaxy-accent">
                         +20 102 842 7473
                       </a>
                     </div>
-                    <MapPin size={24} className="text-galaxy-accent mt-1 mr-4" />
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <MapPin size={24} className="text-galaxy-accent mt-1" />
                     <div>
-                      <h3 className="font-medium text-white mb-1">Location</h3>
+                      <h3 className="font-medium text-white mb-2">Location</h3>
                       <p className="text-gray-300">
                         Faqous, Al-Sharqia Governorate, Egypt
                       </p>
