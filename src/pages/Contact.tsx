@@ -1,6 +1,13 @@
 
 import { useEffect, useState } from 'react';
-import { SiTelegram,SiLinkedin,SiGithub,SiCodeforces,SiTryhackme,SiHackthebox} from 'react-icons/si';
+import {
+  SiTelegram,
+  SiLinkedin,
+  SiGithub,
+  SiCodeforces,
+  SiTryhackme,
+  SiHackthebox
+} from 'react-icons/si';
 import {
   Mail,
   MapPin,

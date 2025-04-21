@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +29,10 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location]);
 
+  const handleDownloadCV = () => {
+    window.open('/assit/Yasser-Belal-CV.pdf', '_blank');
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -42,7 +45,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -54,6 +57,13 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <button
+            onClick={handleDownloadCV}
+            className="flex items-center space-x-2 px-4 py-2 rounded-full bg-galaxy-accent/20 text-galaxy-accent hover:bg-galaxy-accent/30 transition-colors duration-300"
+          >
+            <Download size={16} />
+            <span>CV</span>
+          </button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -84,6 +94,13 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <button
+            onClick={handleDownloadCV}
+            className="flex items-center justify-center space-x-2 py-2 px-4 w-full rounded-md bg-galaxy-accent/20 text-galaxy-accent hover:bg-galaxy-accent/30 transition-colors duration-300"
+          >
+            <Download size={16} />
+            <span>Download CV</span>
+          </button>
         </div>
       </div>
     </header>
