@@ -12,21 +12,21 @@ interface ExperienceItem {
 
 const Experience = () => {
   const [loaded, setLoaded] = useState(false);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
     }, 300);
-    
+
     return () => clearTimeout(timer);
   }, []);
-  
+
   const experiences: ExperienceItem[] = [
     {
       title: "Human Resources Team Member",
       company: "GDG On-Campus Zagazig",
       period: "03/2025 - present",
-      location: "On-Campus Zagazig",
+      location: "GDG On-Campus Zagazig",
       responsibilities: [
         "Worked as a Human Resources Team Member supporting recruitment and organizational tasks.",
         "Assisted in coordinating interviews, managing candidate communications, and maintaining HR records.",
@@ -57,9 +57,9 @@ const Experience = () => {
     },
     {
       title: "Member",
-      company: "ICPC Zagazig Community",
+      company: "IEEE ZSB CS",
       period: "10/2024 - present",
-      location: "ICPC Zagazig Community",
+      location: "IEEE ZSB CS",
       responsibilities: [
         "Started a journey into cybersecurity, learning the basics of network security, ethical hacking, penetration testing, and security protocols.",
         "Took in team activities, improving teamwork, collaboration, and communication skills.",
@@ -78,7 +78,7 @@ const Experience = () => {
       ],
     },
   ];
-  
+
   return (
     <div className="min-h-screen pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -88,11 +88,11 @@ const Experience = () => {
             My professional journey and roles that have shaped my career path and skills development.
           </p>
         </div>
-        
+
         <div className="relative ml-4">
           {/* Timeline Line */}
           <div className="absolute top-0 left-4 bottom-0 w-0.5 bg-galaxy-accent/30" />
-          
+
           {/* Experience Items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -105,7 +105,7 @@ const Experience = () => {
                 <div className="absolute left-0 top-0 w-8 h-8 rounded-full bg-galaxy-dark border-2 border-galaxy-accent flex items-center justify-center z-10">
                   <Briefcase size={16} className="text-galaxy-accent" />
                 </div>
-                
+
                 {/* Content */}
                 <div className="galaxy-card p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -121,7 +121,7 @@ const Experience = () => {
                       <span>{exp.period}</span>
                     </div>
                   </div>
-                  
+
                   <ul className="space-y-2 text-gray-300">
                     {exp.responsibilities.map((item, i) => (
                       <li key={i} className="flex items-start">
