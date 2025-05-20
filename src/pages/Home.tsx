@@ -1,9 +1,9 @@
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Briefcase, Mail, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ProfileImage from '../components/ProfileImage';
+import { projects } from '../data/projects';
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
@@ -15,6 +15,8 @@ const Home = () => {
     
     return () => clearTimeout(timer);
   }, []);
+  
+  const latestProject = projects[projects.length - 1];
   
   return (
     <div className="min-h-screen pt-24 pb-12 flex flex-col justify-center">
@@ -70,9 +72,8 @@ const Home = () => {
         <div className={`mt-20 galaxy-card p-6 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h3 className="font-heading text-xl font-medium mb-4 text-galaxy-star">Featured Project</h3>
           <div className="mb-4">
-            <h4 className="text-xl font-bold mb-2">Employee-Management-Systemr</h4>
-            <p className="text-gray-300">
-            A comprehensive web-based application for user management and database interaction. </p>
+            <h4 className="text-xl font-bold mb-2">{latestProject.title}</h4>
+            <p className="text-gray-300">{latestProject.description}</p>
           </div>
           <Link to="/projects" className="inline-flex items-center text-galaxy-accent hover:underline">
             View All Projects <ArrowRight size={16} className="ml-2" />
